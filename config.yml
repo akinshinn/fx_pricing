@@ -1,0 +1,9 @@
+simulation:
+  M: 1000
+  confidence: 0.95
+  kappa: 0.5
+  theta: 0.02
+  sigma: 0.01
+  r0: 0.01
+  T: 1
+  N: 252

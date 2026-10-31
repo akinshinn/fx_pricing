@@ -4,7 +4,8 @@ from statistics import NormalDist
 
 
 class CIR:
-    def __init__(self, r0, kappa, theta, sigma, T, N, random_state=42):
+    def __init__(self, r0 = None, kappa = None, theta = None, sigma = None, 
+                 T = None, N = None, random_state=42):
         self.r0 = r0 # начальное значение
         self.kappa = kappa # скорость возврата к среднему
         self.theta = theta # среднее значение 
@@ -108,3 +109,7 @@ class CIR:
             "q_lower": q_lower,
             "q_upper": q_upper,
         }
+
+    def calibrate(self, observed_data, time_steps_per_day):
+        X = np.zeros()
+
